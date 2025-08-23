@@ -40,6 +40,7 @@ public class Game {
             String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
+        this.year = year; 
         this.genre = genre;
         this.platforms = platforms;
         this.score = score;
@@ -62,6 +63,14 @@ public class Game {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
     }
 
     public String getGenre() {
@@ -136,6 +145,8 @@ public class Game {
             return false;
         return true;
     }
+
+
     
     
 }
